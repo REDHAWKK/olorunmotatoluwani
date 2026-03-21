@@ -1,23 +1,23 @@
  /* SMOOTH SCROLL*/
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
-  body { font-family: 'Poppins', sans-serif; }
-
-    .bg-animated {
-      background: linear-gradient(-45deg, #020617, #0f172a, #1e3a8a, #020617);
-      background-size: 400% 400%;
-      animation: gradient 10s ease infinite;
+ body { font-family: 'Poppins', sans-serif; }
+.bg-animated {
+      background: radial-gradient(circle at top left, #1e3a8a, transparent 40%),
+                  radial-gradient(circle at bottom right, #0f172a, transparent 40%),
+                  linear-gradient(135deg, #020617, #0f172a, #1e3a8a);
+      background-attachment: fixed;
     }
 
-    @keyframes gradient {
-      0% { background-position: 0% 50%; }
+    
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
-
     .glass {
-      backdrop-filter: blur(10px);
-      background: rgba(255,255,255,0.05);
+      background: linear-gradient(145deg, rgba(30,58,138,0.9), rgba(15,23,42,0.95));
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
     }

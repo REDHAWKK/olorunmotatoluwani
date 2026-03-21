@@ -3,25 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Toluwani | Professional Editor</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <title>Olorunmota Toluwani | Professional Editor</title>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">  <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/feather-icons"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-animated text-white">
 
 <!-- NAVBAR -->
-<nav class="fixed top-0 left-0 w-full bg-blue-950/80 backdrop-blur-lg z-50 border-b border-white/10">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+<nav class="fixed top-0 left-0 w-full z-50 glass shadow-lg shadow-black/20">
 
-    <!-- Logo -->
-    <div class="flex items-center gap-3">
-      <img src="./images/d-logo.png" alt="Toluwani Logo" class="h-10 w-10 object-contain">
-      <span class="text-white font-semibold text-lg tracking-wide">
-        Toluwani
-      </span>
-    </div>
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <h1 class="text-xl font-bold tracking-widest bg-gradient-to-r from-blue-400 via-blue-200 to-white bg-clip-text text-transparent hover:scale-105 transition duration-300">
+      Toluwani
+    </h1>
 
     <!-- Desktop Menu -->
     <div class="hidden md:flex space-x-8 text-blue-200">
@@ -44,7 +39,7 @@
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-4 text-blue-200">
+ <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-4 py-6 text-blue-200 bg-blue-950/70 backdrop-blur-lg">
     <a href="#home" class="block">Home</a>
     <a href="#services" class="block">Services</a>
     <a href="#about" class="block">About</a>
@@ -53,22 +48,12 @@
   </div>
 </nav>
 
-<!-- MENU SCRIPT -->
-<script>
-  const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('mobile-menu');
-
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
-</script>
-
 <!-- HERO -->
 <section id="home" class="min-h-screen flex items-center px-6 pt-20">
   <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
     <!-- TEXT -->
-    <div class="text-center md:text-left">
+    <div class="text-center md:text-left" data-aos="fade-right">
       <h1 class="text-5xl md:text-6xl font-bold mb-6">
         Olorunmota Toluwani
       </h1>
@@ -83,7 +68,7 @@
     </div>
 
     <!-- IMAGE -->
-    <div class="flex justify-center md:justify-end mt-8 md:mt-0">
+    <div class="flex justify-center md:justify-end mt-8 md:mt-0" data-aos="fade-left">
       <img src="images/toluwani.png" alt="Toluwani" 
         class="w-72 md:w-96 h-[400px] md:h-[500px] object-cover rounded-2xl border border-blue-500 shadow-xl hover:scale-105 transition">
     </div>
@@ -93,9 +78,9 @@
 
 <!-- SERVICES -->
 <section id="services" class="py-20 px-6">
-  <h2 class="text-4xl font-bold text-center mb-12">What I Offer</h2>
+  <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">What I Offer</h2>
 
-  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto" data-aos="fade-up" data-aos-delay="100">
 
     <div class="glass p-6 rounded-2xl hover:scale-105 transition text-center">
       <div class="mb-4 flex justify-center">
@@ -138,14 +123,14 @@
   <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
 
     <!-- Image -->
-    <div class="relative">
+    <div class="relative" data-aos="fade-right">
       <img src="./images/toluwani.png" alt="Olorunmota Toluwani"
            class="w-full h-[500px] object-cover rounded-2xl shadow-lg">
       <div class="absolute inset-0 bg-blue-900/20 rounded-2xl"></div>
     </div>
 
     <!-- Text -->
-    <div>
+    <div data-aos="fade-left">
       <h2 class="text-4xl font-bold mb-6">About Me</h2>
 
       <p class="text-blue-200 mb-4 leading-relaxed">
@@ -178,7 +163,7 @@
   </div>
 </section>
 <!-- TESTIMONIALS -->
-<section class="py-20 px-6">
+<section class="py-20 px-6" data-aos="fade-up">
   <h2 class="text-4xl font-bold text-center mb-12">Client Feedback</h2>
 
   <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
@@ -205,7 +190,7 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="py-20 px-6 text-center">
+<section id="contact" class="py-20 px-6 text-center" data-aos="fade-up">
   <h2 class="text-4xl font-bold mb-6">Let's Work Together</h2>
   <p class="text-blue-200 mb-8">Ready to make your writing perfect?</p>
 
@@ -223,6 +208,8 @@
 <footer class="text-center py-6 text-blue-300">
   © 2026 Toluwani | Professional Editor
 </footer>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
