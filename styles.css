@@ -1,0 +1,23 @@
+ /* SMOOTH SCROLL*/
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body { font-family: 'Poppins', sans-serif; }
+
+    .bg-animated {
+      background: linear-gradient(-45deg, #020617, #0f172a, #1e3a8a, #020617);
+      background-size: 400% 400%;
+      animation: gradient 10s ease infinite;
+    }
+
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .glass {
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.05);
+    }
