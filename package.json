@@ -1,0 +1,24 @@
+{
+  "name": "o-t",
+  "version": "1.0.0",
+  "description": "The official portfolio website for Olorunmota Toluwani",
+  "keywords": [
+    "Olorunmota",
+    "Toluwani"
+  ],
+  "homepage": "https://github.com/REDHAWKK/olorunmotatoluwani#readme",
+  "bugs": {
+    "url": "https://github.com/REDHAWKK/olorunmotatoluwani/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/REDHAWKK/olorunmotatoluwani.git"
+  },
+  "license": "ISC",
+  "author": "Oriarebun Princeton",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
